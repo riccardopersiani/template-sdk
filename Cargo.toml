@@ -1,0 +1,19 @@
+[package]
+license = "UNLICENSED"
+name = "template-sdk"
+readme = "README.md"
+version = "0.1.0"
+edition = "2021"
+authors = ["Riccardo Persiani <r.persiani92@gmail.com>"]
+
+[profile.release]
+lto = "thin"
+overflow-checks = true
+debug = true
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
+serde_json = "1.0"  # Add this line for JSON serialization/deserialization

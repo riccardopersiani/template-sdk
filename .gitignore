@@ -1,0 +1,6 @@
+*.sw*
+*.env
+temp*/
+build/
+target/
+*.log

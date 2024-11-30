@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Example SDK",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/examples/main",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "console": "externalTerminal"        }
+    ]
+}
